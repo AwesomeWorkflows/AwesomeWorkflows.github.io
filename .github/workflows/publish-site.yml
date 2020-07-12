@@ -2,7 +2,7 @@ name: 'Publish Gitbook'
 on:
   push:
     branches:
-      - master  # trigger branch
+      - book  # trigger branch
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,3 +13,8 @@ jobs:
       uses: zanderzhao/gitbook-action@v1.2.2
       with:
         token: ${{ secrets.PUBLISH_BOOK }}
+        publish_branch: master
+        gitbook_pdf: true
+        gitbook_pdf_name: AwesomeWorkflows
+        gitbook_epub: true
+        gitbook_epub_name: AwesomeWorkflows
