@@ -13,6 +13,7 @@ jobs:
       uses: zanderzhao/gitbook-action@v1.2.2
       with:
         token: ${{ secrets.PUBLISH_BOOK }}
+        source_branch: book
         publish_branch: master
         gitbook_pdf: true
         gitbook_pdf_name: AwesomeWorkflows
