@@ -1,0 +1,17 @@
+{
+  "name": "AwesomeWorkflows.github.io",
+  "version": "1.0.0",
+  "description": "Main website for AwesomeWorkflows - The place when you can learn a good way of develop",
+  "main": "index.js",
+  "repository": "git@github.com:AwesomeWorkflows/AwesomeWorkflows.github.io.git",
+  "author": "Awesome Workflows",
+  "license": "Apache 2",
+  "scripts": {
+    "build": "gitbook build",
+    "start": "gitbook serve",
+    "export": "gitbook pdf . AwesomeWorkflows.pdf && gitbook epub . AwesomeWorkflows.epub"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}
